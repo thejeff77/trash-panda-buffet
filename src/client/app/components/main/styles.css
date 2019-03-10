@@ -1,18 +1,9 @@
-.main {
-  padding: 150px 0 0;
-  text-align: center;
+.logo-big {
+  object-fit: scale-down;
+  width: 450px;
 }
 
-
-.buttons {
-  display: inline-block;
-  margin: 35px 0;
-}
-
-.buttons .playButton:first-child {
-  margin-right: 5px;
-}
-
-.buttons .playButton:last-child {
-  margin-left: 5px;
+.logo-small {
+  object-fit: scale-down;
+  width: 200px;
 }

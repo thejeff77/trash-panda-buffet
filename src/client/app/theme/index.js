@@ -1,13 +1,35 @@
-import { createMuiTheme } from '@material-ui/core/styles'
+import { applyMiddleware, compose, createStore } from 'redux'
+import { connectRouter, routerMiddleware } from 'connected-react-router'
+import thunk from 'redux-thunk'
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#FF0791',
-      dark: '#FF52B2'
-    }, // hot pink
-    secondary: { main: '#FFB12A' } // orange
+import reducers from './reducers'
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
+export default (history) =>
+  createStore(
+    connectRouter(history)(reducers),
+    initialState,
+    composeEnhancers(
+      applyMiddleware(
+        routerMiddleware(history),
+        thunk
+      )
+    )
+  )
+
+export const initialState = {
+  game: {
+    completed: false,
+    currentCustomer: {},
+    foodItems: [],
+    loading: {},
+    name: '',
+    pastCustomers: [],
+    recorded: false,
+    remainingCustomers: 5,
+    selectedFoodItems: [],
+    scores: {},
+    totalScore: 0
   }
-})
-
-export default theme
+}

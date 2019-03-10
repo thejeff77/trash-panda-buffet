@@ -1,70 +1,36 @@
-.resultsContainer {
-  align-items: center;
-  background-color: white;
-  border: 3px solid white;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  height: 250px;
-  justify-content: center;
-  margin: 35px auto;
-  position: relative;
-  width: 300px;
-}
-
-.finalScoreContainer > .button {
-  margin-right: 15px;
-}
-
 .header {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.result {
+  align-items: center;
   display: flex;
-  font-size: 18px;
   justify-content: center;
-  margin-bottom: 5px;
-  opacity: .7;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.result > .name {
-  font-weight: 500;
-  margin-right: 15px;
-}
-
-.result > .points {
-  margin-left: 10px;
-}
-
-.saveContainer > div {
+.leftBar,
+.rightBar {
   align-items: center;
   background-color: white;
-  border: 3px solid white;
-  border-radius: 3px;
-  box-sizing: border-box;
   display: flex;
+  font-size: 14px;
+  height: 40px;
   justify-content: center;
-  margin: 15px auto 35px;
-  padding: 5px;
-  position: relative;
-  width: 300px;
+  width: 50%;
 }
 
-.saveContainer > div > div {
-  margin: 0;
+.leftBar {
+  border-radius: 20px 0 0 20px;
+  margin: 25px 15px 0 0;
 }
 
-.saveButtonWrapper {
-  position: relative;
+.rightBar {
+  border-radius: 0 20px 20px 0;
+  margin: 25px 0 0 15px;
 }
 
-.saveButtonWrapper > .buttonProgress {
-  color: #4CAF50;
-  left: 50%;
-  margin: -12px 0 0 -12px;
-  position: absolute;
-  top: 50%;
+.text {
+  margin-right: 10px;
+}
+
+.value {
+  font-weight: bold;
 }

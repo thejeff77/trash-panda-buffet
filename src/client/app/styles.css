@@ -1,9 +1,26 @@
-:global(body) {
-  background-color: #373737;
-  font-family: Roboto,sans-serif;
-  text-align: center;
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto 0;
+  width: 90%;
 }
 
-:global(a) {
-  text-decoration: none;
+.mainContainer > div:first-child {
+  margin: 0 35px 0 0;
+}
+
+.mainContainer > div:last-child {
+  margin: 0 0 0 35px;
+}
+
+.remainingCustomers {
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  margin: 35px auto 0;
+  width: 90%;
 }

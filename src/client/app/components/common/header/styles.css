@@ -1,36 +1,36 @@
-.header {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.leftBar,
-.rightBar {
+.listContainer {
   align-items: center;
   background-color: white;
+  border: 3px solid white;
+  border-radius: 3px;
   display: flex;
-  font-size: 14px;
-  height: 40px;
+  flex-direction: column;
+  height: 350px;
   justify-content: center;
-  width: 50%;
+  margin: 35px auto;
+  position: relative;
+  width: 300px;
 }
 
-.leftBar {
-  border-radius: 20px 0 0 20px;
-  margin: 25px 15px 0 0;
+.header {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
-.rightBar {
-  border-radius: 0 20px 20px 0;
-  margin: 25px 0 0 15px;
+.result {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-bottom: 5px;
+  opacity: .7;
 }
 
-.text {
-  margin-right: 10px;
+.result > .name {
+  font-weight: 500;
+  margin-right: 15px;
 }
 
-.value {
-  font-weight: bold;
+.result > .points {
+  margin-left: 10px;
 }

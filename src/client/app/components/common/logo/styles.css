@@ -1,9 +1,5 @@
-.logo-big {
-  object-fit: scale-down;
-  width: 450px;
-}
-
-.logo-small {
-  object-fit: scale-down;
-  width: 200px;
+.footer {
+  bottom: 10px;
+  color: #FFFFFF;
+  width: 100%;
 }
